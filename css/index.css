@@ -3,32 +3,39 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
 }
 
 body {
-    font-family: 'Arial', sans-serif;
     line-height: 1.6;
     color: #333;
     background-color: #fff;
 }
 
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
 /* Header and Navigation */
 .header {
-    background-color: #005792; /* Deep blue */
+    background-color: #1a4f8a;
     color: white;
     padding: 1rem 0;
-    position: sticky;
+    position: fixed;
+    width: 100%;
     top: 0;
-    z-index: 100;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 2rem;
 }
 
 .logo h1 {
@@ -39,10 +46,11 @@ body {
 .nav-links {
     display: flex;
     list-style: none;
+    align-items: center;
 }
 
 .nav-links li {
-    margin-left: 30px;
+    margin-left: 2rem;
 }
 
 .nav-links a {
@@ -53,22 +61,22 @@ body {
 }
 
 .nav-links a:hover {
-    color: #cce6ff;
+    color: #a0c5e9;
 }
 
 .btn {
     background-color: white;
-    color: #005792;
+    color: #1a4f8a;
     border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
+    padding: 0.5rem 1.5rem;
+    border-radius: 4px;
     font-weight: bold;
     cursor: pointer;
     transition: background-color 0.3s;
 }
 
 .btn:hover {
-    background-color: #cce6ff;
+    background-color: #f0f0f0;
 }
 
 .menu-icon {
@@ -95,8 +103,8 @@ body {
     color: white;
     display: flex;
     align-items: center;
-    justify-content: center;
-    text-align: center;
+    text-align: left;
+    padding-top: 80px;
 }
 
 .hero-overlay {
@@ -105,45 +113,103 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 87, 146, 0.7); /* Blue overlay */
+    background: rgba(26, 79, 138, 0.7);
     z-index: 1;
 }
 
 .hero-content {
     position: relative;
     z-index: 2;
-    padding: 20px;
+    max-width: 600px;
+    padding: 0 2rem;
+    text-align: left;
 }
 
-.hero-text {
+.hero-content h2 {
     font-size: 3rem;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.hero-btn {
+    display: inline-block;
+    background-color: white;
+    color: #1a4f8a;
+    padding: 0.8rem 2rem;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.hero-btn:hover {
+    background-color: #f0f0f0;
+}
+
+/* Features Section */
+.features-section {
+    padding: 5rem 0;
+    background-color: #f8f9fa;
+}
+
+.section-title {
+    text-align: center;
+    color: #1a4f8a;
+    margin-bottom: 3rem;
+    font-size: 2.5rem;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.feature-card {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+}
+
+.feature-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.feature-card h3 {
+    color: #1a4f8a;
     margin-bottom: 1rem;
 }
 
 /* Footer */
 .footer {
-    background-color: #005792; /* Deep blue */
+    background-color: #1a4f8a;
     color: white;
-    padding: 40px 0 20px;
+    padding: 3rem 0 1rem;
 }
 
 .footer-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 0 20px;
-}
-
-.footer-section {
-    flex: 1;
-    min-width: 200px;
-    margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    padding: 0 2rem;
 }
 
 .footer-section h4 {
-    margin-bottom: 15px;
+    margin-bottom: 1rem;
     font-size: 1.2rem;
 }
 
@@ -152,11 +218,11 @@ body {
 }
 
 .footer-links li {
-    margin-bottom: 10px;
+    margin-bottom: 0.5rem;
 }
 
 .footer-links a {
-    color: #cce6ff;
+    color: #a0c5e9;
     text-decoration: none;
     transition: color 0.3s;
 }
@@ -167,7 +233,7 @@ body {
 
 .social-icons {
     display: flex;
-    gap: 15px;
+    gap: 1rem;
 }
 
 .social-icons a {
@@ -177,14 +243,38 @@ body {
 }
 
 .social-icons a:hover {
-    color: #cce6ff;
+    color: #a0c5e9;
 }
 
 .footer-bottom {
     text-align: center;
-    margin-top: 30px;
-    padding-top: 20px;
-    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    margin-top: 3rem;
+    padding-top: 1rem;
+    border-top: 1px solid #3a6ea5;
+}
+
+/* WhatsApp Float Button */
+.float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.my-float {
+    margin-top: 16px;
 }
 
 /* Responsive Design */
@@ -192,32 +282,45 @@ body {
     .menu-icon {
         display: flex;
     }
-    
+
     .nav-links {
         position: fixed;
-        top: 70px;
+        top: 80px;
         left: -100%;
-        background-color: #005792;
-        width: 100%;
         flex-direction: column;
-        text-align: center;
-        transition: left 0.3s;
-        padding: 20px 0;
+        background-color: #1a4f8a;
+        width: 100%;
+        height: calc(100vh - 80px);
+        transition: left 0.3s ease;
+        padding: 2rem 0;
     }
-    
+
     .nav-links.active {
         left: 0;
     }
-    
+
     .nav-links li {
-        margin: 15px 0;
+        margin: 1.5rem 0;
     }
-    
-    .footer-container {
-        flex-direction: column;
-    }
-    
-    .hero-text {
+
+    .hero-content h2 {
         font-size: 2rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .social-icons {
+        justify-content: center;
     }
 }
