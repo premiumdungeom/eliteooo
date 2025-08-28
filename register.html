@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="csrf-token" content="ZXUCo1jTKzdm7nQlHvCIWXcQXqLUWdrZLVBdYFiT">
+
+        <title>MONEY MIND INVESTMENT</title>
+
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.bunny.net">
+        <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.css" rel="stylesheet" />
+        <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2/dist/alpine.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.js"></script>
+        <script src="https://cdn.tailwindcss.com"></script>
+
+        <!-- Google Ads -->
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9764183583019968"
+        crossorigin="anonymous"></script>
+        
+        <style>
+            body {
+                background-color: #dc2626; /* red-600 */
+            }
+            
+            .btn-primary {
+                background-color: #dc2626; /* red-600 */
+            }
+            
+            .btn-primary:hover {
+                background-color: #b91c1c; /* red-700 */
+            }
+            
+            .focus\:ring-emerald-500:focus {
+                --tw-ring-color: rgba(220, 38, 38, 0.5); /* red-600 with opacity */
+            }
+            
+            .text-emerald-600 {
+                color: #dc2626; /* red-600 */
+            }
+            
+            .text-emerald-600:hover {
+                color: #b91c1c; /* red-700 */
+            }
+            
+            .bg-emerald-600 {
+                background-color: #dc2626; /* red-600 */
+            }
+            
+            .bg-emerald-600:hover {
+                background-color: #b91c1c; /* red-700 */
+            }
+            
+            .float{
+                position:fixed;
+                width:60px;
+                height:60px;
+                bottom:40px;
+                right:40px;
+                background-color:#25d366;
+                color:#FFF;
+                border-radius:50px;
+                text-align:center;
+                font-size:30px;
+                box-shadow: 2px 2px 3px #999;
+                z-index:100;
+            }
+
+            .my-float{
+                margin-top:18px;
+            }
+        </style>
+    </head>
+    <body class="bg-red-600">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+        <a href=""
+            class="float" target="_blank">
+            <i class="fa fa-whatsapp my-float"></i>
+        </a>
+
+        <div class="relative sm:flex sm:justify-center sm:items-center min-h-screen bg-dots-darker bg-center selection:text-white">
+            <nav class="fixed w-full z-20 top-0 start-0 bg-black border-b border-gray-600">
+                <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto px-4 py-3">
+                    <div class="flex items-center space-x-3 rtl:space-x-reverse">
+                        <a href="/" class="flex items-center">
+                            <span class="self-center text-sm font-semibold whitespace-nowrap text-white ml-2">MONEY MIND INVESTMENT</span>
+                        </a>
+                    </div>
+
+                    <!-- Mobile menu button -->
+                    <div class="flex items-center gap-2 md:order-2">
+                        <a href="https://money-mind-investment.xyz/register" class="hidden md:block text-white bg-red-600 hover:bg-red-700 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-sm px-3 py-2 text-center">Register</a>
+                        <a href="https://money-mind-investment.xyz/login" class="hidden md:block text-white bg-red-600 hover:bg-red-700 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-sm px-4 py-2 text-center">Login</a>
+                        
+                        <button
+                            id="mobile-menu-button"
+                            type="button"
+                            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-400 rounded-lg md:hidden hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-600"
+                            aria-controls="navbar-default"
+                            aria-expanded="false"
+                        >
+                            <span class="sr-only">Open main menu</span>
+                            <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15" />
+                            </svg>
+                        </button>
+                    </div>
+
+                    <!-- Desktop menu -->
+                    <div class="hidden w-full md:flex md:w-auto md:order-1" id="navbar-default">
+                        <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium md:flex-row md:space-x-8 md:mt-0 md:border-0">
+                        </ul>
+                    </div>
+
+                    <!-- Mobile menu (hidden by default) -->
+                    <div class="hidden w-full md:hidden md:w-auto" id="mobile-menu">
+                        <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-700 rounded-lg bg-gray-800 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-transparent">
+                            <li class="border-t border-gray-700 pt-2 mt-2">
+                                <a href="https://money-mind-investment.xyz/register" class="block py-2 px-3 text-white bg-red-600 rounded hover:bg-red-700 text-center">Register</a>
+                            </li>
+                            <li>
+                                <a href="https://money-mind-investment.xyz/login" class="block py-2 px-3 text-white bg-red-600 rounded hover:bg-red-700 text-center mt-2">Login</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="w-full sm:max-w-md px-6 py-4 bg-black shadow-md overflow-hidden sm:rounded-lg mt-20 mb-28">
+                <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-8 max-w-2xl w-full">
+        <div class="text-center mb-8">
+            <h2 class="text-3xl font-bold text-gray-900 dark:text-white">Join Us Today</h2>
+            <p class="text-gray-600 dark:text-gray-300 mt-2">Create your account in just a few steps</p>
+        </div>
+
+        <form method="POST" action="https://money-mind-investment.xyz/register" class="grid md:grid-cols-2 gap-6">
+            <input type="hidden" name="_token" value="ZXUCo1jTKzdm7nQlHvCIWXcQXqLUWdrZLVBdYFiT" autocomplete="off">
+            <!-- Personal Information Section -->
+            <div class="md:col-span-2">
+                <h3 class="text-lg font-medium text-gray-900 dark:text-white mb-4 border-b pb-2">Personal Information</h3>
+            </div>
+
+            <!-- First Name -->
+            <div>
+                <label class="block font-medium text-sm text-white text-gray-700 dark:text-gray-300" for="first_name">
+    First Name *
+</label>
+                <div class="relative mt-1">
+                    <input  class="border-gray-300 focus:border-red-500 focus:ring-red-500 rounded-md shadow-sm block w-full pl-10 py-3 border-gray-300 rounded-lg shadow-sm focus:ring-red-500 focus:border-red-500" id="first_name" type="text" name="first_name" required="required" autofocus="autofocus" autocomplete="given-name" placeholder="John">
+                    <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                        <svg class="h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd" />
+                        </svg>
+                    </div>
+                </div>
+                            </div>
+
+            <!-- Other Name -->
+            <div>
+                <label class="block font-medium text-sm text-white text-gray-700 dark:text-gray-300" for="other_name">
+    Last Name *
+</label>
+                <div class="relative mt-1">
+                    <input  class="border-gray-300 focus:border-red-500 focus:ring-red-500 rounded-md shadow-sm block w-full pl-10 py-3 border-gray-300 rounded-lg shadow-sm focus:ring-red-500 focus:border-red-500" id="other_name" type="text" name="other_name" required="required" autocomplete="family-name" placeholder="Doe">
+                    <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                        <svg class="h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M10 2a5 5 0 00-5 5v2a2 2 0 00-2 2v5a2 2 0 002 2h10a2 2 0 002-2v-5a2 2 0 00-2-2H7V7a3 3 0 015.905-.75 1 1 0 001.937-.5A5.002 5.002 0 0010 2z" />
+                        </svg>
+                    </div>
+                </div>
+                            </div>
+
+            <!-- Gender -->
+            <div>
+                <label class="block font-medium text-sm text-white text-gray-700 dark:text-gray-300" for="gender">
+    Gender *
+</label>
+                <div class="relative mt-1">
+                    <select 
+                        id="gender" 
+                        class="block w-full pl-10 py-3 border-gray-300 rounded-lg shadow-sm focus:ring-red-500 focus:border-red-500 bg-white dark:bg-gray-700 dark:text-white" 
+                        name="gender" 
+                        required
+                    >
+                        <option value="" disabled selected>Select gender</option>
+                        <option value="male" >Male</option>
+                        <option value="female" >Female</option>
+                        <option value="other" >Other</option>
+                    </select>
+                    <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                        <svg class="h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd" />
+                        </svg>
+                    </div>
+                </div>
+                            </div>
+
+            <!-- Contact Information Section -->
+            <div class="md:col-span-2 mt-6">
+                <h3 class="text-lg font-medium text-gray-900 dark:text-white mb-4 border-b pb-2">Contact Information</h3>
+            </div>
+
+            <!-- Email -->
+            <div>
+                <label class="block font-medium text-sm text-white text-gray-700 dark:text-gray-300" for="email">
+    Email *
+</label>
+                <div class="relative mt-1">
+                    <input  class="border-gray-300 focus:border-red-500 focus:ring-red-500 rounded-md shadow-sm block w-full pl-10 py-3 border-gray-300 rounded-lg shadow-sm focus:ring-red-500 focus:border-red-500" id="email" type="email" name="email" required="required" autocomplete="email" placeholder="your@email.com">
+                    <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                        <svg class="h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+                            <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+                        </svg>
+                    </div>
+                </div>
+                            </div>
+
+            <!-- Phone -->
+            <div>
+                <label class="block font-medium text-sm text-white text-gray-700 dark:text-gray-300" for="phone">
+    Phone *
+</label>
+                <div class="relative mt-1">
+                    <input  class="border-gray-300 focus:border-red-500 focus:ring-red-500 rounded-md shadow-sm block w-full pl-10 py-3 border-gray-300 rounded-lg shadow-sm focus:ring-red-500 focus:border-red-500" id="phone" type="tel" name="phone" required="required" autocomplete="tel" placeholder="+1234567890">
+                    <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                        <svg class="h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
+                        </svg>
+                    </div>
+                </div>
+                            </div>
+
+            <!-- Address -->
+            <div>
+                <label class="block font-medium text-sm text-white text-gray-700 dark:text-gray-300" for="address">
+    Address *
+</label>
+                <div class="relative mt-1">
+                    <input  class="border-gray-300 focus:border-red-500 focus:ring-red-500 rounded-md shadow-sm block w-full pl-10 py-3 border-gray-300 rounded-lg shadow-sm focus:ring-red-500 focus:border-red-500" id="address" type="text" name="address" required="required" autocomplete="street-address" placeholder="123 Main St">
+                    <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                        <svg class="h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd" />
+                        </svg>
+                    </div>
+                </div>
+                            </div>
+
+            <!-- Country -->
+            <div>
+                <label class="block font-medium text-sm text-white text-gray-700 dark:text-gray-300" for="country">
+    Country *
+</label>
+                <div class="relative mt-1">
+                    <input  class="border-gray-300 focus:border-red-500 focus:ring-red-500 rounded-md shadow-sm block w-full pl-10 py-3 border-gray-300 rounded-lg shadow-sm focus:ring-red-500 focus:border-red-500" id="country" type="text" name="country" required="required" autocomplete="country" placeholder="Your Country">
+                    <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                        <svg class="h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M4.083 9h1.946c.089-1.546.383-2.97.837-4.118A6.004 6.004 0 004.083 9zM10 2a8 8 0 100 16 8 8 0 000-16zm0 2c-.076 0-.232.032-.465.262-.238.234-.497.623-.737 1.182-.389.907-.673 2.142-.766 3.556h3.936c-.093-1.414-.377-2.649-.766-3.556-.24-.56-.5-.948-.737-1.182C10.232 4.032 10.076 4 10 4zm3.971 5c-.089-1.546-.383-2.97-.837-4.118A6.004 6.004 0 0115.917 9h-1.946zm-2.003 2H8.032c.093 1.414.377 2.649.766 3.556.24.56.5.948.737 1.182.233.23.389.262.465.262.076 0 .232-.032.465-.262.238-.234.498-.623.737-1.182.389-.907.673-2.142.766-3.556zm1.166 4.118c.454-1.147.748-2.572.837-4.118h1.946a6.004 6.004 0 01-2.783 4.118zm-6.268 0C6.412 13.97 6.118 12.546 6.03 11H4.083a6.004 6.004 0 002.783 4.118z" clip-rule="evenodd" />
+                        </svg>
+                    </div>
+                </div>
+                            </div>
+
+            <!-- State -->
+            <div>
+                <label class="block font-medium text-sm text-white text-gray-700 dark:text-gray-300" for="state">
+    State/Province *
+</label>
+                <div class="relative mt-1">
+                    <input  class="border-gray-300 focus:border-red-500 focus:ring-red-500 rounded-md shadow-sm block w-full pl-10 py-3 border-gray-300 rounded-lg shadow-sm focus:ring-red-500 focus:border-red-500" id="state" type="text" name="state" required="required" autocomplete="address-level1" placeholder="Your State">
+                    <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                        <svg class="h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd" />
+                        </svg>
+                    </div>
+                </div>
+                            </div>
+
+            <!-- Security Section -->
+            <div class="md:col-span-2 mt-6">
+                <h3 class="text-lg font-medium text-gray-900 dark:text-white mb-4 border-b pb-2">Account Security</h3>
+            </div>
+
+            <!-- Password -->
+            <div>
+                <label class="block font-medium text-sm text-white text-gray-700 dark:text-gray-300" for="password">
+    Password *
+</label>
+                <div class="relative mt-1">
+                    <input  class="border-gray-300 focus:border-red-500 focus:ring-red-500 rounded-md shadow-sm block w-full pl-10 py-3 border-gray-300 rounded-lg shadow-sm focus:ring-red-500 focus:border-red-500" id="password" type="password" name="password" required="required" autocomplete="new-password" placeholder="••••••••">
+                    <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                        <svg class="h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd" />
+                        </svg>
+                    </div>
+                </div>
+                                <p class="mt-1 text-xs text-gray-500 dark:text-gray-400">Minimum 8 characters</p>
+            </div>
+
+            <!-- Confirm Password -->
+            <div>
+                <label class="block font-medium text-sm text-white text-gray-700 dark:text-gray-300" for="password_confirmation">
+    Confirm Password *
+</label>
+                <div class="relative mt-1">
+                    <input  class="border-gray-300 focus:border-red-500 focus:ring-red-500 rounded-md shadow-sm block w-full pl-10 py-3 border-gray-300 rounded-lg shadow-sm focus:ring-red-500 focus:border-red-500" id="password_confirmation" type="password" name="password_confirmation" required="required" autocomplete="new-password" placeholder="••••••••">
+                    <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                        <svg class="h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd" />
+                        </svg>
+                    </div>
+                </div>
+                            </div>
+
+            <!-- Invite / Referral Code - Updated Version -->
+            <!-- Replace just this section in your current code -->
+<div class="md:col-span-2">
+    <label class="block font-medium text-sm text-white text-gray-700 dark:text-gray-300" for="referred_by">
+    Referral Code
+</label>
+    <div class="relative mt-1">
+        <input  class="border-gray-300 focus:border-red-500 focus:ring-red-500 rounded-md shadow-sm block w-full pl-10 py-3 border-gray-300 rounded-lg shadow-sm focus:ring-red-500 focus:border-red-500" id="referred_by_display" type="text" value="C486AE77" readonly="readonly">
+        <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+            <svg class="h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                <path d="M9 6a3 3 0 11-6 0 3 3 0 016 0zM17 6a3 3 0 11-6 0 3 3 0 016 0zM12.93 17c.046-.327.07-.66.07-1a6.97 6.97 0 00-1.5-4.33A5 5 0 0119 16v1h-6.07zM6 11a5 5 0 015 5v1H1v-1a5 5 0 015-5z" />
+            </svg>
+        </div>
+    </div>
+    
+    <input 
+        type="hidden" 
+        name="referred_by" 
+        id="referred_by" 
+        value="C486AE77"
+    >
+    
+    </div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Get referral code from URL using 'ref'
+    const urlParams = new URLSearchParams(window.location.search);
+    const urlReferral = urlParams.get('ref'); // <-- updated
+
+    const displayField = document.getElementById('referred_by_display');
+    const hiddenField = document.getElementById('referred_by');
+
+    if (urlReferral && (displayField.value === '' || displayField.value === 'N/A')) {
+        displayField.value = urlReferral;
+        hiddenField.value = urlReferral;
+    }
+});
+</script>
+
+            <!-- Terms and Conditions -->
+            <div class="md:col-span-2 flex items-start">
+                <div class="flex items-center h-5">
+                    <input id="terms" name="terms" type="checkbox" class="focus:ring-red-500 h-4 w-4 text-red-600 border-gray-300 rounded" required>
+                </div>
+                <div class="ml-3 text-sm">
+                    <label for="terms" class="font-medium text-gray-700 dark:text-gray-300">
+                        I agree to the <a href="#" class="text-red-600 hover:text-red-500">Terms of Service</a> and <a href="#" class="text-red-600 hover:text-red-500">Privacy Policy</a>
+                    </label>
+                </div>
+            </div>
+
+            <!-- Submit Button -->
+            <div class="md:col-span-2 flex items-center justify-between mt-6">
+                <a class="text-sm text-red-600 hover:text-red-500" href="https://money-mind-investment.xyz/login">
+                    Already have an account?
+                </a>
+
+                <button type="submit" class="inline-flex items-center px-4 py-2 bg-gray-800 dark:bg-gray-200 border border-transparent rounded-md font-semibold text-xs text-white dark:text-gray-800 uppercase tracking-widest hover:bg-gray-700 dark:hover:bg-white focus:bg-gray-700 dark:focus:bg-white active:bg-gray-900 dark:active:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2 dark:focus:ring-offset-gray-800 transition ease-in-out duration-150 px-6 py-3 bg-red-600 hover:bg-red-700 focus:ring-2 focus:ring-red-500 focus:ring-offset-2 transition duration-200">
+    <svg class="w-5 h-5 mr-2 -ml-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.707l-3-3a1 1 0 00-1.414 1.414L10.586 9H7a1 1 0 100 2h3.586l-1.293 1.293a1 1 0 101.414 1.414l3-3a1 1 0 000-1.414z" clip-rule="evenodd" />
+                    </svg>
+                    Create Account
+</button>
+            </div>
+        </form>
+    </div>
+            </div>
+        </div>
+        
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const mobileMenuButton = document.getElementById('mobile-menu-button');
+                const mobileMenu = document.getElementById('mobile-menu');
+
+                mobileMenuButton.addEventListener('click', function() {
+                    const isExpanded = this.getAttribute('aria-expanded') === 'true';
+                    this.setAttribute('aria-expanded', !isExpanded);
+                    mobileMenu.classList.toggle('hidden');
+
+                    // Toggle icon
+                    if (!isExpanded) {
+                        this.innerHTML = `
+                            <span class="sr-only">Close menu</span>
+                            <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                            </svg>
+                        `;
+                    } else {
+                        this.innerHTML = `
+                            <span class="sr-only">Open menu</span>
+                            <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15" />
+                            </svg>
+                        `;
+                    }
+                });
+            });
+        </script>
+    </body>
+</html>
